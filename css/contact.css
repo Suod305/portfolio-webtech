@@ -1,0 +1,105 @@
+
+/* Header CSS */
+#header {
+    width: 100%;
+    height: 30vh; 
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: 10rem;
+}
+
+/* Container CSS */
+.container {
+    padding: 1rem 10%; 
+}
+
+/* Navigation CSS */
+#nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.logo {
+    font-size: 2.5rem;
+    color: rgb(254, 88, 113);
+}
+
+#menu ul li {
+    display: inline-block;
+    list-style: none;
+    margin: 1rem 2rem; 
+    animation: fadeInRight 1s ease-in-out;
+}
+
+#menu ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.5rem;
+    position: relative;
+}
+
+#menu ul li a::after {
+    content: '';
+    width: 0%;
+    height: 0.2rem;
+    background: #ff004f;
+    position: absolute;
+    left: 0;
+    bottom: -0.6rem;
+    transition: 0.5s;
+}
+
+#menu ul li a:hover::after {
+    width: 100%;
+}
+
+/* Contact CSS */
+.contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.contact p {
+    margin-top: 2rem;
+}
+
+.contact p i {
+    color: #ff004f;
+    margin-right: 1.5rem; 
+    font-size: 2rem; 
+}
+
+.icons {
+    margin-top: 2rem; 
+}
+
+.icons a {
+    text-decoration: none;
+    font-size: 2.5rem; 
+    margin-right: 2rem;
+    color: #ababab;
+    display: inline-block;
+    transition: transform 0.5s;
+}
+
+.icons a:hover {
+    cursor: pointer;
+    color: #ff004f;
+    scale: 1.5;
+}
+
+.btn {
+    margin: 2rem 0; 
+    display: inline-block;
+    background: #ff004f;
+    padding: 2rem 4rem;
+    border-radius: 1.25rem; 
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}

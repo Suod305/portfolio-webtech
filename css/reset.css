@@ -1,0 +1,17 @@
+/* reset.css */
+
+/* Remove default margin and padding */
+body, h1, h2, h3, h4, h5, h6, p, ul, ol, li, dl, dd, dt, blockquote, figure, fieldset, legend, textarea, pre, iframe, hr, table, th, td {
+    margin: 0;
+    padding: 0;
+}
+
+/* Remove default list styles */
+ul, ol {
+    list-style: none;
+}
+
+/* Remove default hyperlink styles */
+a {
+    text-decoration: none;
+}

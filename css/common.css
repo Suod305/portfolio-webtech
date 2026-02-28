@@ -1,0 +1,96 @@
+/* Google Fonts */
+/* Define Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap'); 
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap'); 
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap'); 
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap'); 
+
+/* Headings */
+h1, h2, h3{
+    font-family: 'Montserrat', sans-serif; 
+}
+/* Links */
+a {
+    font-family: 'Roboto', sans-serif; 
+}
+/* Paragraphs */
+p {
+    font-family: 'Open Sans', sans-serif; 
+}
+/* heading Nav */
+#header-nav ul li a {
+    font-family: 'Lato', sans-serif; 
+}
+/* Form Text */
+.form-input {
+    font-family: 'Nunito', sans-serif; 
+}
+
+/* Body styling */
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background: black;
+    color: #fff;
+}
+
+/* Header navigation */
+#header-nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.logo {
+    font-size: 2.5rem; 
+    color: rgb(254, 88, 113);
+}
+
+#header-nav ul li {
+    display: inline-block;
+    list-style: none;
+    margin: 0.5rem 0.5rem;
+}
+
+#header-nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.6rem;
+    position: relative;
+}
+
+#header-nav ul li a::after {
+    content: '';
+    width: 0%;
+    height: 0.1rem; 
+    background: #ff004f;
+    position: absolute;
+    left: 0;
+    bottom: -0.3rem; 
+    transition: 0.5s;
+}
+
+#header-nav ul li a:hover::after {
+    width: 100%;
+}
+
+/* Footer navigation */
+.copyright {
+    width: 100%;
+    text-align: center;
+    padding: 2.5rem 0;
+    background: #262626;
+    font-weight: 300;
+    margin-top: auto;
+}
+
+.copyright i {
+    color: #ff004f;
+}

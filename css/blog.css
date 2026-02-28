@@ -1,0 +1,250 @@
+/* Header Styles */
+#header {
+    width: 100%;
+    height: 30vh; 
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: 80%;
+}
+
+/* Container Styles */
+.container {
+    padding: 1rem 10%;
+    /* padding: 0 10%; */
+}
+
+/* Navigation Styles */
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.logo {
+    font-size: 4rem;
+    color: rgb(254, 88, 113);
+}
+
+nav ul li {
+    display: inline-block;
+    list-style: none;
+    margin: 1rem 2rem;
+    animation: fadeInRight 1s ease-in-out;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.1rem;
+    position: relative;
+}
+
+nav ul li a::after {
+    content: '';
+    width: 0%;
+    height: 0.2rem;
+    background: rgb(254, 88, 113);
+    position: absolute;
+    left: 0;
+    bottom: -0.4rem;
+    transition: 0.5s;
+}
+
+nav ul li a:hover::after {
+    width: 100%;
+}
+
+/* Contact Form Styles */
+.btn.btn2 {
+    margin: 1.2rem 0;
+    display: inline-block;
+    background: rgb(254, 88, 113);
+    padding: 1.2rem 2.5rem;
+    border-radius: 1.2rem;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+.contact-right form {
+    width: 100%;
+}
+
+form input,
+form textarea {
+    width: 100%;
+    border: 0;
+    outline: none;
+    background: #262626;
+    padding: 0.9rem;
+    margin: 0.9rem 0;
+    color: #fff;
+    font-size: 1.1rem;
+    border-radius: 0.6rem;
+}
+
+form .btn2 {
+    padding: 0.9rem 3.8rem;
+    font-size: 1.1rem;
+    margin-top: 1.2rem;
+    cursor: pointer;
+}
+
+
+
+.form-container select,
+.blog-posts h2,
+.blog-posts .post {
+    color: white;
+}
+
+.form-container,
+.blog-posts {
+    background-color: black;
+    
+    padding: 20px; /* Add padding to create space around content */
+}
+
+.form-container select {
+    background-color: rgb(254, 88, 113); /* Set background color for filter */
+    padding: 10px; /* Add padding to select element */
+    border: none; /* Remove border */
+    border-radius: 5px; /* Add border radius */
+    cursor: pointer; /* Change cursor on hover */
+    width: 100%; /* Make select element full width */
+}
+
+.form-container label {
+    display: block; /* Make label block level */
+    margin-bottom: 10px; /* Add space below label */
+    font-weight: bold; /* Add bold font weight */
+}
+
+.blog-posts{
+    display: flex;
+    flex-direction: column;
+    gap:1em;
+}
+.blog-posts .post {
+    background-color: #333; /* Set background color for blog post */
+    padding: 20px; /* Add padding to create space around blog post */
+}
+
+.blog-posts .post h3 {
+    margin-top: 0; /* Remove top margin for post title */
+}
+
+.post{
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    margin-bottom: 1.5rem;
+}
+
+.btn-container {
+    display: flex; /* Use flexbox for button container */
+    justify-content: space-between; /* Space buttons evenly */
+}
+
+.btn-container button {
+    background-color: rgb(254, 88, 113);
+    color: white;
+    border: none;
+    padding: 10px 20px; /* Add padding to buttons */
+    border-radius: 5px; /* Add border radius to buttons */
+    cursor: pointer;
+}
+
+.btn-container button:hover {
+    background-color: rgb(214, 0, 32); /* Change background color on hover */
+}
+
+.clear-button,
+.submit-button,
+.edit,
+.delete {
+    padding: 10px 20px;
+    margin: 5px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.clear-button,
+.submit-button {
+    background-color: rgb(254, 88, 113); /* Green */
+    color: white;
+}
+
+.edit,
+.delete {
+    background-color: rgb(254, 88, 113); /* Red */
+    color: white;
+}
+
+.clear-button:hover,
+.submit-button:hover,
+.edit:hover,
+.delete:hover {
+    opacity: 0.8;
+}
+
+/* comment section */
+.Comment{
+    display: flex;
+    flex-direction: row;
+    gap:1em;
+    align-items: center;
+}
+.DeleteComment{
+    border: 1pt solid white;
+    font-family: 'Nunito', sans-serif;
+    padding:0.5em;
+    color:white;
+    background-color: transparent;
+}
+.comments{
+    display: flex;
+    flex-direction: column;
+    font-family: 'Nunito', sans-serif;
+    width:40%;
+}
+
+.addComment{
+    display: flex;
+    flex-direction: row;
+    gap:1em;
+    align-items: center;
+}
+#comments-section{
+    display: flex;
+    flex-direction: row;
+    gap:1em;
+    align-items: center;
+}
+#addCommentTitle{
+    font-family: 'Nunito', sans-serif;
+    color:rgb(254, 88, 113);
+    width: 8rem;
+    margin: 0 auto;
+}
+.addComment {
+    display: flex;
+    flex-direction: row;
+    width: 60%;
+}
+#CommentButton{
+    padding: 1rem;
+    margin-left: 2rem;
+    font-size: 1rem;
+    border: 1pt solid white;
+    background-color: transparent;
+    border-radius: 0.5rem;
+    color: white;
+    font-family: 'Nunito', sans-serif;
+}
+#CommentButton:hover{
+    background-color: rgb(254, 88, 113);
+    color: black;
+}
